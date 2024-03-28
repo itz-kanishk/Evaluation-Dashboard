@@ -1,0 +1,43 @@
+/* StudentCard.css */
+.card {
+    width: 18rem;
+    margin: 10px;
+  }
+  
+  .card-body {
+    padding: 1.25rem; /* Bootstrap default padding for card body */
+  }
+  
+  .card-title {
+    font-size: 1.25rem; /* Bootstrap default font size for card title */
+    font-weight: bold;
+  }
+  
+  .card-subtitle {
+    margin-bottom: 0.5rem; /* Bootstrap default margin bottom for card subtitle */
+  }
+  
+  .card-text {
+    font-size: 1rem; /* Bootstrap default font size for card text */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .card-title {
+      font-size: 1.1rem;
+    }
+  
+    .card-text {
+      font-size: 0.9rem;
+    }
+  }
+  
