@@ -6,7 +6,7 @@ const AddRemoveStudents = () => {
   const [selectedStudents, setSelectedStudents] = useState([]);
 
   useEffect(() => {
-    fetch("https://scale-zv1b.onrender.com/api/students")
+    fetch("https://evaluation-dashboard-mksj.onrender.com/api/students")
       .then((response) => response.json())
       .then((data) => setStudents(data))
       .catch((error) => console.error("Error fetching students:", error));
@@ -32,8 +32,8 @@ const AddRemoveStudents = () => {
       return;
     }
 
-    const mentorId = "660481f7b75dfc73cc82b015";
-    fetch(`https://scale-zv1b.onrender.com/api/mentor/${mentorId}/student`, {
+    const mentorId = "660559ec6341d48bf0d1ea3e";
+    fetch(`https://evaluation-dashboard-mksj.onrender.com/api/mentor/${mentorId}/student`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -27,7 +27,7 @@ const GradeStudents = () => {
       "Content-Type": "application/json",
     };
     let response = await fetch(
-      `https://scale-zv1b.onrender.com/api/student/${student_id}/score`,
+      `https://evaluation-dashboard-mksj.onrender.com/api/student/${student_id}/score`,
       {
         method: "PUT",
         body: JSON.stringify(bodyContent),

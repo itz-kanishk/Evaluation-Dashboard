@@ -3,20 +3,20 @@ import { Row, Col, Button } from 'react-bootstrap';
 import StudentCard from './StudentCard';
 
 const Home = () => {
-  const mentor_id = "660481f7b75dfc73cc82b015";
+  const mentor_id = "660559ec6341d48bf0d1ea3e";
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
-    fetch(`https://scale-zv1b.onrender.com/api/mentor/${mentor_id}/students`)
+    fetch(`https://evaluation-dashboard-mksj.onrender.com/api/mentor/${mentor_id}/students`)
       .then((response) => response.json())
       .then((data) => setStudents(data))
       .catch((error) => console.error("Error fetching students:", error));
   }, []);
 
   const deleteStudent = (student_id) => {
-    const mentorid = "660481f7b75dfc73cc82b015";
+    const mentorid = "660559ec6341d48bf0d1ea3e";
     fetch(
-      `https://scale-zv1b.onrender.com/api/mentor/${mentorid}/student/${student_id}`,
+      `https://evaluation-dashboard-mksj.onrender.com/api/mentor/${mentorid}/student/${student_id}`,
       {
         method: "DELETE",
       }
